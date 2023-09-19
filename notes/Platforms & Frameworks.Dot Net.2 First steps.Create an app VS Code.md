@@ -2,7 +2,7 @@
 id: bw1vbvpwvp0mtf2fx2igc2p
 title: Create an app VS Code
 desc: How to create your first project in .Net
-updated: 1690865064868
+updated: 1695091767035
 created: 1690172709567
 ---
 ## - Open VS code.
@@ -58,3 +58,6 @@ dotnet run
 <p style="color:yellow">
 Note: The terminal must be in the directory where your project is, otherwise you will have to indicate with the <code>--Project</code> flag where is the project that you want to run by passing the path of where it is located.
 </p>
+
+
+If you want to see the example project you can visit [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/1.MyFirstApp/MyFirstApp)

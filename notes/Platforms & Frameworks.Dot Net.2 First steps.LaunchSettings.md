@@ -2,7 +2,7 @@
 id: 7qqh3bbfazkl2wahl4ed2oj
 title: LaunchSettings
 desc: ''
-updated: 1691354736341
+updated: 1695352597585
 created: 1691195624844
 ---
 
@@ -50,7 +50,7 @@ Every Asp.Net core project comes with a JSON file called "launchSettings", this 
 }
 ```
 
-The previous example shows a default launchSettings.json, ass you can see there are 2 sections, <code>"iisSetttings"</code> and <code>"profiles"</code>, first we are going to focus on the "profiles", and then in the "iisSettings".
+The previous example shows a default launchSettings.json, as you can see there are 2 sections, <code>"iisSetttings"</code> and <code>"profiles"</code>, first we are going to focus on the "profiles", and then in the "iisSettings".
 
 ### "profiles"
 

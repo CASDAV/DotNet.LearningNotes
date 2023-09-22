@@ -2,7 +2,7 @@
 id: s0jhm0w44j3ijznlcf1zq3y
 title: Understanding HTTP
 desc: ''
-updated: 1695150053688
+updated: 1695358858393
 created: 1693539953427
 ---
 
@@ -20,7 +20,7 @@ Another way to understand this concepts is to see it as the abstraction of a con
 
 ## HTTP Request
 
-Let's start from the begining or in this case from the request, as mentioned before the request is basically a message sent from the client to the server.
+Let's start from the begining or in this case from the request, as mentioned before the request is basically a message sent from the client to the server, where the client ask for some resources or actions to be preformed in the server.
 
 ![Request Exmaple](assets/3_HTTP/HTTP_Request.png)
 
@@ -28,11 +28,10 @@ Let's start from the begining or in this case from the request, as mentioned bef
 
 The next is the basic structure of a HTTP request: 
 
-```HTTP
+```text
 METHOD | URL | PROTOCOL VERSION
 -----------------------------------------
 REQUEST HEADERS
-(KEY:VALUE)
 -----------------------------------------
 EMPTY LINE
 -----------------------------------------
@@ -52,16 +51,78 @@ Some HTTP methods are:
 - DELETE: Deletes the specified resource.
 
 <p style="color:yellow">Note: There are more HTTP methods, but this 4 are the most used.</p>
-<p style="color:yellow">Note 2: As you can see each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.</p>
+<p style="color:yellow">Note 2: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.</p>
 
 #### URL
 
-This section indicates where are you making the request, for example you just open your favorite browser (Chrome, Safari, Friefox, etc...) you want to make a search in Google, you type in the **Address Bar** `google.com`, and then you press enter, in that moment you are making a request to Google, that is indicated thanks to the address that you type before in the address bar the URL should look like in you request message like this `https://www.google.com/`
-
+This section is refered to the relative path of the request, for example you are in a web page called `www.example.com`, and you click a button to see a list of the users, then the **Address Bar** of your browser changes from `www.exapmle.com` to `www.example.com/users` and the displayed page change and displays a list of the users, as you can see the address bar contains 2 main parts the **Base Path (a.k.a. Base URL)** in this example is `www,example.com`, and the **Relative Path (a.k.a. Realtive URL)** in this example is `/users`, as mentioned previously the URL section of a request message takes the relative path, so as you can imageno the value that is taked to make the request messages is `/users`.
 
 #### PROTOCOL VERSION
 
+This section determines the version of the HTTP protocol (a.k.a. HTTP specification) that its going to be used by the client and server to communicate, the most commonly used version is **HTTP/1.1**, the next list shows another commonly used or relevant versions of the protocol with a short description of the main characteristic of the version:
 
+- HTTT/0.9 The one-line protocol
+- HTTP/1.0 Buildinig extensibili
+- HTTP/1.1 The standarized protocol
+- HTTP/2 A protocol for greater performance
+- HTTP/3 HTTP over QUIC
 
+<p style="color:yellow">Note: For more information about HTTP protocol versions visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"> Mozilla Developer HTTP evolution</a></p> 
 
+#### REQUEST HEADERS
 
+This section contains Key-Value pairs that are sent by the browser to the server, those Key-Value pairs send inportant information that the server is used by the server for many purposes, here are some common examples of request headers:
+
+- Accept: Represtent MIME type of response constent to be accepted by the client. i.e. text/html, text/plain, application/json, application/xml, etc...
+
+- Accept-Language: Represents natural language of response content to be accepted by the client. i.e. en-US.
+
+- Content-Type: MIME type of request body. i.e. text/x-www-form-uriencoded, application/json, application/xml, multipart/form-data, etc...
+
+- Content-Lenght: Length (bytes) of request body. i.e. 100
+
+- Date: Date and time of the request. i.e. Tue, 15 Nov 1994 08:12:31 GTM
+
+- Host: Server domain name. i.e. www.example.com
+
+- User-Agent: Browser (client) deatils. i.e. Mozilla/5.0 Firefox/12.0
+
+- Cookie: Contains cookies to send to server. i.e. x=100
+
+#### EMPTY LINE
+
+The purpose of this section is to separate the Key-Value pairs from the request body.
+
+#### REQUEST BODY
+
+This section contains data relevant for the resources or logic business which the server is asked for.
+
+Common request body formats:
+
+- JSON
+- XML
+
+### Query string
+
+Additionally to request body, other information can be sent to the server without using the request body, this can be achived by using query string sintax, this sintax allows you to send parameter values from the client to the server. Basically the query string is a text concatenated to the path of the request, here is a example of a query string:
+
+```text
+www.example.com/user?id=1
+                    ^
+        Here starts the query string
+```
+
+### Request message example
+
+Here is an example of how looks an HTTP request message
+
+```text
+POST /user?id=1 HTTP/1.1
+Host: www.example.com
+Accept: application/json
+Content-Type: application/json
+
+{
+    Some_Key_Value: "some data"
+}
+```

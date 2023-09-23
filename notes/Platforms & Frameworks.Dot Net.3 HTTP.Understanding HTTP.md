@@ -2,7 +2,7 @@
 id: s0jhm0w44j3ijznlcf1zq3y
 title: Understanding HTTP
 desc: ''
-updated: 1695512652503
+updated: 1695512930960
 created: 1693539953427
 ---
 
@@ -215,3 +215,16 @@ Some common response headers are:
 #### RESPONSE BODY
 
 This one doesn't change, it's just the same as it was in the request format.
+
+### Respnse message example
+
+Here is an example of how looks an HTTP response message
+
+```text
+HTTP/1.1 200 Ok
+Server: Kestrel
+Content-Type: application/json
+
+{
+    Some_Key_Value: "some data"
+}

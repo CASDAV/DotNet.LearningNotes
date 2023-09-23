@@ -2,7 +2,7 @@
 id: rkq4b6v3g5gtttnqsqxmql3
 title: Dot Net
 desc: Introduction to .Net
-updated: 1691454437358
+updated: 1695504434945
 created: 1689994015219
 ---
 
@@ -28,7 +28,7 @@ After you developed your .Net application you will need to host it, that means y
 
 .Net code is available on GitHub for free, this usaualy means that you will get updates of .Net frequently.
 
-[[.Net on GitHub|https://github.com/dotnet]]
+[.Net repository on GitHub](https://github.com/dotnet)
 
 ### Is cloud supported?
 Microsfot Azure cloud is supported out of the box.

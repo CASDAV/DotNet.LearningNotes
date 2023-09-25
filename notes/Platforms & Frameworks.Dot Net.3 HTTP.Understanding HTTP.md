@@ -2,7 +2,7 @@
 id: s0jhm0w44j3ijznlcf1zq3y
 title: Understanding HTTP
 desc: ''
-updated: 1695512930960
+updated: 1695513628414
 created: 1693539953427
 ---
 
@@ -48,10 +48,14 @@ Some HTTP methods are:
 - GET: Request a representation of the specified resource.
 - POST: Submits an entity to the specified resource, often causing a change in state or side effects on the server.
 - PUT: Replaces all current representations of the target resource with the request payload.
+- PATCH: The PATCH method applies partial modifications to a resource.
+- HEAD: The HEAD method asks for a response identical to a GET request, but without the response body.
 - DELETE: Deletes the specified resource.
 
-<p style="color:yellow">Note: There are more HTTP methods, but these 4 are the most used.</p>
-<p style="color:yellow">Note 2: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.</p>
+
+<p style="color:yellow">Note: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.</p>
+<p style="color:yellow">Note 2: For more information about HTTP methods, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"> Mozilla Developer:HTTP request methods
+</a>.</p> 
 
 #### URL
 
@@ -67,7 +71,7 @@ This section determines the version of the HTTP protocol (a.k.a. HTTP specificat
 - HTTP/2 A protocol for greater performance
 - HTTP/3 HTTP over QUIC
 
-<p style="color:yellow">Note: For more information about HTTP protocol versions, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"> Mozilla Developer HTTP evolution</a>.</p> 
+<p style="color:yellow">Note: For more information about HTTP protocol versions, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"> Mozilla Developer: Evolution of HTTP</a>.</p> 
 
 #### REQUEST HEADERS
 
@@ -212,11 +216,15 @@ Some common response headers are:
 
 - Location: contains a URL to redirect.
 
+#### EMPTY LINE
+
+This one doesn't change, it's just the same as it was in the request format.
+
 #### RESPONSE BODY
 
 This one doesn't change, it's just the same as it was in the request format.
 
-### Respnse message example
+### Response message example
 
 Here is an example of how looks an HTTP response message
 

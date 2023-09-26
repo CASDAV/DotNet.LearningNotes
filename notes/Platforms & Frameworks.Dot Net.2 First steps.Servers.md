@@ -2,7 +2,7 @@
 id: h1s10xt9mkd72qwe09b08i3
 title: Servers
 desc: ''
-updated: 1691099991716
+updated: 1695703525439
 created: 1690865127083
 ---
 
@@ -30,11 +30,10 @@ An application server is software that host applications and enable interaction 
 
 ## Web servers (a.k.a. reverse proxy servers)
 
-The strict definition of a web server says that a web server is a subset of an application server, but there is a sligtly diference between these type of severs, the diference is the purpose, opposite to application server the purpose of web server is to deliver static web content (HTML pages, files, images, video, etc...) in response to hypertext transfer protocol (HTTP) request from a web browser. [IBM: Web server vs. application server: What is the difference?](https://www.ibm.com/topics/web-server-application-server)
+The strict definition of a web server says that a web server is a subset of an application server, but there is a slight difference between these type of severs, the difference is the purpose, opposite to application server the purpose of web server is to deliver static web content (HTML pages, files, images, video, etc...) in response to hypertext transfer protocol (HTTP) request from a web browser.[IBM: Web server vs. application server: What is the difference?](https://www.ibm.com/topics/web-server-application-server)
 
-<!---Aquí va una breve explicación de las caracteristicas añadidas de los servidores web--->
 
-There are 2 relavant characteristics to use a web server, first, the support for for other protocols (CGI, CGI variants, etc...), second, the ease of use of services like reverse proxy, load balancing, decompressing recuest, etc...
+There are 2 relevant characteristics to use a web server, first, the support for other protocols (CGI, CGI variants, etc...), second, the ease of use of services like reverse proxy, load balancing, decompressing request, etc...
 
 ### Examples of web servers
 

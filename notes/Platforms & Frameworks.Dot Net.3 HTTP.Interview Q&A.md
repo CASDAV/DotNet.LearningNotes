@@ -2,10 +2,9 @@
 id: icxlg59f5qizidohx3lcgn0
 title: Interview Q&A
 desc: ''
-updated: 1695574901354
+updated: 1695704235948
 created: 1693539983871
 ---
-
 ## What is HTTP?
 HTTP (a.k.a. Hypertext Transfer Protocol) is an application protocol that is the foundation of most data exchange on the web, and it is the base to understand Client-Server applications.
 
@@ -14,6 +13,18 @@ Initially designed and developed by [Tim Berners-Lee](https://es.wikipedia.org/w
 The basics of functionality of HTTP are **the request** message and **the response** message, usually a request is made by the browser and send it to the server, then the server takes the request and executes some logic to generate a response, that response is sent to the browser and there the browser does something with that response.
 
 ## What is the format of a Request Message?
+
+HTTP Requests are messages which are sent by the client to initiate an action on the server.
+
+It consists of various things:
+
+1. Request Line: The Request-Line includes with HTTP method, URL, HTTP version.
+
+2. Request Headers: Contains request-header fields that allow the client to pass additional information to the server, logically equivalent to the parameters while method invocation in a programming language.
+
+3. Request body: Contains actual content to send to server; such as query string, JSON, XML etc.
+
+Format:
 
 ```text
 METHOD | URL | PROTOCOL VERSION
@@ -25,8 +36,25 @@ EMPTY LINE
 REQUEST BODY
 ```
 
+Example:
+
+```text
+POST /user?id=1 HTTP/1.1
+Host: www.example.com
+Accept: application/json
+Content-Type: application/json
+
+{
+    Some_Key_Value: "some data"
+}
+```
+
 ## What are the important HTTP methods (or HTTP verbs) – (GET, POST, PUT, PATCH, HEAD, DELETE)?
-The important HTTP methods are:
+HTTP defines a set of request methods to indicate the desired action to be performed for a given resource.
+
+The “GET” and “POST” are most used in HTML forms. The default request type in browsers while opening a page, is “GET”.
+
+The “GET”, “POST”, “PUT”, “PATCH”, “HEAD” and “DELETE” are used in RESTful HTTP services, such as “Web API controllers”.
 
 - GET: Request a representation of the specified resource.
 - POST: Submits an entity to the specified resource, often causing a change in state or side effects on the server.
@@ -35,7 +63,21 @@ The important HTTP methods are:
 - HEAD: The HEAD method asks for a response identical to a GET request, but without the response body.
 - DELETE: Deletes the specified resource.
 ## What are the important HTTP status codes?
-These ae the important status codes:
+An HTTP status code is a server response to a browser’s request. It indicates status of completed action as a response to the request.
+
+HTTP status code classes:
+
+- 1xx – Informational
+
+- 2xx – Success
+
+- 3xx – Redirection
+
+- 4xx – Client errors
+
+- 5xx – Server errors
+
+These are the important status codes:
 
 - 101 Switching Protocols: This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.
 
@@ -59,6 +101,22 @@ These ae the important status codes:
 
 ## What is Content Negotiation in HTTP?
 
+In HTTP, content negotiation is the mechanism that is used for serving different representations of a resource to the same URI to help the user agent specify which representation is best suited for the user (for example, which document language, which image format, or which content encoding).
+
+There are many approaches to archive the goal of this mechanism, but the most commonly used is Server-driven negotiation (a.k.a. proactive negotiation), the key of this mechanism is the request/response headers, where keys: Accept, Accept-Language, Accept-Encoding, Content-Type, etc... identify with the values the expected content (request) or the content offered (response).
+
+Some examples of values used in those headers are: text/x-www-form-uriencoded, application/json, application/xml, multipart/form-data, etc...
+
 ## Explain how HTTP protocol works?
 
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It handles communication between web browsers and web servers. HTTP follows a classical client-server model. The basics of functionality of HTTP are **the request** message and **the response** message, usually a request is made by the browser and send it to the server, then the server takes the request and executes some logic to generate a response (usually a resource), that response is sent to the browser and there the browser does something with that response.
+
+HTTP is a protocol that allows the fetching of resources, such as HTML documents. It is the foundation of any data exchange on the Web, and it is a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.
+
+Another way to understand this concept is to see it as the abstraction of a conversation, i.e. subject *"A"* ask for something to subject *"B"*, *"B"* thinks what is he going to say, and then he answers to *"A"*.
+
 ## What is a web server?
+
+The strict definition of a web server says that a web server is a subset of an application server, but there is a slight difference between these type of severs, the difference is the purpose, opposite to application server the purpose of web server is to deliver static web content (HTML pages, files, images, video, etc...) in response to hypertext transfer protocol (HTTP) request from a web browser.
+
+There are 2 relevant characteristics to use a web server, first, the support for other protocols (CGI, CGI variants, etc...), second, the ease of use of services like reverse proxy, load balancing, decompressing request, etc...

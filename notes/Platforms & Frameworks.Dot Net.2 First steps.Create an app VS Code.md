@@ -2,7 +2,7 @@
 id: bw1vbvpwvp0mtf2fx2igc2p
 title: Create an app VS Code
 desc: How to create your first project in .Net
-updated: 1695091767035
+updated: 1695504466292
 created: 1690172709567
 ---
 ## - Open VS code.
@@ -60,4 +60,4 @@ Note: The terminal must be in the directory where your project is, otherwise you
 </p>
 
 
-If you want to see the example project you can visit [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/1.MyFirstApp/MyFirstApp)
+If you want to see the example project you can visit this repo: [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/1.MyFirstApp/MyFirstApp)

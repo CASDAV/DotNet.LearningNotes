@@ -2,7 +2,7 @@
 id: i0ax9iduor9z9gcw2xjqiii
 title: Windows
 desc: ''
-updated: 1699125175148
+updated: 1699414744294
 created: 1695334112218
 ---
 
@@ -25,6 +25,6 @@ The step is similar to linux set up, it is necessary install Visual Studio Code 
 https://https://code.visualstudio.com/
 ```
 
-After IDE has installed, search in extension Browser <p style="color:yellow">.Net EXtension for Visual Studio Code</p> Can you see the extension in the next image
+After IDE has installed, search in extension Browser <p style="color:yellow">.Net Extension for Visual Studio Code</p> Can you see the extension in the next image
 
 ![VS code .Net extensions](assets/1_Enviroment_setup/extensions.png)

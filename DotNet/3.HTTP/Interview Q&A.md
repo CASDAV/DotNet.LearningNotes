@@ -14,8 +14,8 @@ It consists of various things:
 1. Request Line: The Request-Line includes with HTTP method, URL, HTTP version.
 2.  Request Headers: Contains request-header fields that allow the client to pass additional information to the server, logically equivalent to the parameters while method invocation in a programming language.
 3. Request body: Contains actual content to send to server; such as query string, JSON, XML etc.
-4. Format:
-5. 
+
+Format:
 ```text
 METHOD | URL | PROTOCOL VERSION|
 -----------------------------------------

@@ -52,8 +52,8 @@ There are 2 main models of how is deployed an Asp.Net core, those models are the
 
 ### Application server model
 
-![Application server model](ASP.NetCore_AppServerExec.png)
+![Application server model](../assets/First_Steps/ASP.NetCore_AppServerExec.png)
 
 ### Web server model
 
-![Web server model](ASP.NetCore_WebServerExec.png)
+![Web server model](../assets/First_Steps/ASP.NetCore_WebServerExec.png)

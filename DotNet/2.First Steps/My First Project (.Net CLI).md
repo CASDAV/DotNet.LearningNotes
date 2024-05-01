@@ -8,11 +8,11 @@
 
 ## You will see a pop up menu, choose where you are goin to generate the project, and click open.
 
-![Project location](VScodeFolderPopupLinux.png)
+![Project location](../assets/First_Steps/VScodeFolderPopupLinux.png)
 
 ## Open a terminal.
 
-![VS code terminal](VScodeTerminal.png)
+![VS code terminal](../assets/First_Steps/VScodeTerminal.png)
 
 ## Execute the next command
 
@@ -24,7 +24,7 @@ dotnet new list
 
 Once the command is executed you will see a list with all the project templates for .Net.
 
-![Project templates](DotNetTemplatesCommand.png)
+![Project templates](../assets/First_Steps/DotNetTemplatesCommand.png)
 
 <p style="color:yellow">Note: When you are creating a project from CLI try always to remember the short name of the template that you want to create to use it in the next command.</p>
 
@@ -38,7 +38,7 @@ dotnet new web -n MyFirstApp
 
 Once it is executed you will se that a folder was created.
 
-![Project created](DotNetNewProjectCommand.png)
+![Project created](../assets/First_Steps/DotNetNewProjectCommand.png)
 
 ## Try to execute your app
 
@@ -46,7 +46,7 @@ To do this you have 2 options
 
 If you have the extensions installed click the button that points the red arrow, as shown in the next image.
 
-![Run your app](Run_app.png)
+![Run your app](../assets/First_Steps/Run_app.png)
 
 You can also run your app runing the next command in the terminal
 

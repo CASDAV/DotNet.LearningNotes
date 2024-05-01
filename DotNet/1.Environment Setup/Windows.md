@@ -5,4 +5,4 @@ The first step to install the .Net SDK on Windows (Valid for Window 10 and Windo
 
 At the bottom, select the visual studio on the left side of the screen
 
-![VS code .Net extensions](assets/Environment_Setup/vsc.png)
+![VS code .Net extensions](../assets/Environment_Setup/vsc.png)

@@ -6,7 +6,7 @@ Initially designed and developed by [Tim Berners-Lee](https://es.wikipedia.org/w
 
 The basics of functionality of HTTP are **the request** message and **the response** message, usually a request is made by the browser and send it to the server, then the server takes the request and executes some logic to generate a response, that response is sent to the browser and there the browser does something with that response.
 
-![Example of request-response](HTTP_ClientServer_Ex.png)
+![Example of request-response](../assets/HTTP/HTTP_ClientServer_Ex.png)
 
 Another way to understand this concept is to see it as the abstraction of a conversation, i.e. subject *"A"* ask for something to subject *"B"*, *"B"* thinks what is he going to say, and then he answers to *"A"*.
 
@@ -14,7 +14,7 @@ Another way to understand this concept is to see it as the abstraction of a conv
 
 Let's start from the beginning or in this case from the request, as mentioned before the request basically is a message sent from the client to the server, where the client ask for some resources or actions to be preformed in the server.
 
-![Request Example](HTTP_Request.png)
+![Request Example](../assets/HTTP/HTTP_Request.png)
 
 ### HTTP Request Format
 
@@ -145,7 +145,7 @@ Content-Type: application/json
 
 As mentioned previously when a request is made to a server this one catches the request, performs some logic, and then sends back a response to the browser.
 
-![Response example](HTTP_Response.png)
+![Response example](../assets/HTTP/HTTP_Response.png)
 
 ### HTTP Response Format
 

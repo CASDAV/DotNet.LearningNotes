@@ -12,7 +12,7 @@ The easiest way to install postman in Linux is using [Snap](https://snapcraft.io
 
 Open your terminal:
 
-![Terminal](Terminal example.png)
+![Terminal](assets/Environment_Setup/Terminal_example.png)
 
 ### Second Step
 
@@ -26,7 +26,7 @@ sudo snap install postman
 
 Once you have finished the installation process, execute the application.
 
-![Postman execution](Postman execution.png)
+![Postman execution](assets/Environment_Setup/Postman_execution.png)
 
 <p style="color:yellow">Note: The graphical interface may vary depending on the graphical environment of your distribution</p>
 

@@ -51,11 +51,16 @@ Some HTTP methods are:
 - DELETE: Deletes the specified resource.
 
   
-<p style="color:yellow">Note: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.</p>
+<p style="color:yellow">
+Note: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.
+</p>
 
-<p style="color:yellow">Note 2: For more information about HTTP methods, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"> Mozilla Developer:HTTP request methods
-
-</a>.</p>
+<p style="color:yellow">
+Note 2: For more information about HTTP methods, visit 
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">
+	Mozilla Developer: HTTP request methods.
+	</a>
+</p>
 
 #### URL
 
@@ -184,30 +189,23 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 Additionally, each response code comes with a description of the code, next we will see the most common response status codes with its status descriptions, and detailed info about the response:
 
 - 101 Switching Protocols: This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.
-
 - 200 Ok: The request succeeded. The result meaning of "success" depends on the HTTP method:
-
-    - GET: The resource has been fetched and transmitted in the message body.
-
-    - HEAD: The representation headers are included in the response without any message body.
-
-    - PUT or POST: The resource describing the result of the action is transmitted in the message body.
-
-    - TRACE: The message body contains the request message as received by the server.
-
+	- GET: The resource has been fetched and transmitted in the message body.
+	- HEAD: The representation headers are included in the response without any message body.
+	- PUT or POST: The resource describing the result of the action is transmitted in the message body.
+	- TRACE: The message body contains the request message as received by the server.
 - 302 Found: This response code means that the URI of requested resource has been changed temporarily. Further changes in the URI might be made in the future. Therefore, this same URI should be used by the client in future requests.
-
 - 304 Not Modified: This is used for caching purposes. It tells the client that the response has not been modified, so the client can continue to use the same cached version of the response.
-
 - 400 Bad Request: The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
-
 - 401 Unauthorized: Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response.
-
 - 404 Not Found: The server cannot find the requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 Forbidden to hide the existence of a resource from an unauthorized client. This response code is probably the most well known due to its frequent occurrence on the web.
-
 - 500 Internal Server Error: The server has encountered a situation it does not know how to handle.
 
-<p style="color:yellow">Note: For more information about status codes click the next link: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">Mozilla Developer: HTTP response status codes</a>.
+<p style="color:yellow">
+Note: For more information about status codes click the next link: 
+	<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">
+	Mozilla Developer: HTTP response status codes.
+	</a>
 </p>
 
 #### RESPONSE HEADERS

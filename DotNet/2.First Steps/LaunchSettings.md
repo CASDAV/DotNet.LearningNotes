@@ -91,17 +91,11 @@ As you noticed, those profiles have some common attributes: "commandName", "dotn
 Now let's understand each attribute, and what is in charge of:
 
 - **commandName** this attribute will determine the internal and external web server that is going to use to host the application and handle the HTTP request. The values accepted for this attribute are:
-
-    - **Project** this one means that your application will run only in a Kestrel server.
-    - 
-    - **IISExpress** this one means that your application will run Kestrel, but an IIS Express (IIS lightweight version) server will work as a reverse proxy server. (Only for Windows)
-
-    - **IIS** this one means that your application will run Kestrel, but an IIS server will work as a reverse proxy server. (Only for Windows)
-
+	- **Project** this one means that your application will run only in a Kestrel server.
+	- **IISExpress** this one means that your application will run Kestrel, but an IIS Express (IIS lightweight version) server will work as a reverse proxy server. (Only for Windows)
+	- **IIS** this one means that your application will run Kestrel, but an IIS server will work as a reverse proxy server. (Only for Windows)
 - **dotnetRunMessages** this attribute allows or deny the application to display messages in the terminal of the running server.
-
 - **launchBrowser** this attribute determines if once the application is running, a browser window will be initialized to see/consume the application by opening the root URL or not.
-
 - **applicationUrl** this attribute specifies the application base URL or URLs which you can access the application.
 
 <p style="color:yellow">Note: a good practice is to set the port of the application between 1024 - 65536, because the other ports are reserved for the operating system. (Especially on Windows)</p>
@@ -111,11 +105,7 @@ Now let's understand each attribute, and what is in charge of:
 ### "iisSettings"
 
 As you can infer this section is in charge of the configuration when the IIS or IISExpress commandName is used in one profile, this configuration have it's own attributes, those attributes are:
-
-- **windowsAuthentication** This attirbute will specify whether Windows Authentication is enabled for your application or not. If true means Windows Authentication is enabled, and false means not enabled.
-
+- **windowsAuthentication** This attribute will specify whether Windows Authentication is enabled for your application or not. If true means Windows Authentication is enabled, and false means not enabled.
 - **anonymousAuthentication** This attirbute will specify whether Anonymous Authentication is enabled for your application or not. If true means Anonymous Authentication is enabled, and false means not enabled.
-
 - **iisExpress** This attribute has it's own sub attributes, those sub attributes are mainly focused on ports and security protocols.
-
-    - **sslPort** This attribute specifies the HTTPS Port number using which you can access the application in the case of an IIS Express Server. The value 0 means you cannot access the application using HTTPS protocol.
+- **sslPort** This attribute specifies the HTTPS Port number using which you can access the application in the case of an IIS Express Server. The value 0 means you cannot access the application using HTTPS protocol.

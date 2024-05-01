@@ -1,10 +1,10 @@
 ## Open VS code.
 
-![Clean window VS code](VScodeMainPage.png)
+![Clean window VS code](../assets/First_Steps/VScodeMainPage.png)
 
 ## Once it's open, go to files and click on open folder, or use the key board shortcut "Ctrl+k Ctrl+o".
 
-![Open a folder](VScodeOpenFolder.png)
+![Open a folder](../assets/First_Steps/VScodeOpenFolder.png)
 
 ## You will see a pop up menu, choose where you are goin to generate the project, and click open.
 
@@ -17,9 +17,7 @@
 ## Execute the next command
 
 ```bash
-
 dotnet new list
-
 ```
 
 Once the command is executed you will see a list with all the project templates for .Net.
@@ -31,9 +29,7 @@ Once the command is executed you will see a list with all the project templates 
 ## Execute the next command
 
 ```bash
-
 dotnet new web -n MyFirstApp
-
 ```
 
 Once it is executed you will se that a folder was created.
@@ -51,9 +47,7 @@ If you have the extensions installed click the button that points the red arrow,
 You can also run your app runing the next command in the terminal
 
 ```bash
-
 dotnet run
-
 ```
 
 <p style="color:yellow">

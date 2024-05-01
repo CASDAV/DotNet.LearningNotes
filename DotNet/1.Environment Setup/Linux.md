@@ -88,4 +88,4 @@ sudo rpm -i {The-path-where-you-saved-the-file}/{the-name-of-the-file}.rpm
 
 Install the 3 extension shown below
 
-![VS code .Net extensions](extensions.png)
+![VS code .Net extensions](assets/Environment_Setup/extensions.png)

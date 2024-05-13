@@ -37,3 +37,20 @@ You will see a login page, you can create an account, login in if you already ha
 After all this steps you are ready to use postman.
 
 ## Windows
+
+The process from install Postman in windows is easy, the main and more common process is download .exe file in <a href="https://www.postman.com/">the official postman web page. </a>
+
+### First Step
+
+Visit the official web site of postman:
+
+![Postman web](../assets/Environment_Setup/Postman_web.png)
+
+### Second Step
+
+In the "Download the desktop application for" field, select the Windows option, then a new page where we can find the "Windows 64-bit" button, then you need to press the button and it will automatically start downloading the installation file for windows.
+
+![Postman web](../assets/Environment_Setup/Postman_web_download.png)
+
+<p style="color:yellow">Note: The downloaded installation file is compatible with Windows 64-bit architecture on the processor, so it is necessary to verify before that your device is compatible with the downloaded postman installer</p>
+### Third Step

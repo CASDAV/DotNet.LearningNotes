@@ -2,82 +2,44 @@ Every Asp.Net core project comes with a JSON file called "launchSettings", this 
 
 ## launchSettings.json example:
 
-```JSON
-
+```json
 {
-
   "iisSettings": {
-
     "windowsAuthentication": false,
-
     "anonymousAuthentication": true,
-
     "iisExpress": {
-
       "applicationUrl": "http://localhost:4539",
-
       "sslPort": 44303
-
     }
-
   },
-
   "profiles": {
-
     "http": {
-
       "commandName": "Project",
-
       "dotnetRunMessages": true,
-
       "launchBrowser": true,
-
       "applicationUrl": "http://localhost:5287",
-
       "environmentVariables": {
-
         "ASPNETCORE_ENVIRONMENT": "Development"
-
       }
-
     },
-
     "https": {
-
       "commandName": "Project",
-
       "dotnetRunMessages": true,
-
       "launchBrowser": true,
-
       "applicationUrl": "https://localhost:7146;http://localhost:5287",
-
       "environmentVariables": {
-
         "ASPNETCORE_ENVIRONMENT": "Development"
-
       }
-
     },
-
     "IIS Express": {
-
       "commandName": "IISExpress",
-
       "launchBrowser": true,
-
       "environmentVariables": {
-
         "ASPNETCORE_ENVIRONMENT": "Development"
-
       }
-
     }
-
   }
-
 }
-
 ```
 
 The previous example shows a default launchSettings.json, as you can see there are 2 sections, <code>"iisSetttings"</code> and <code>"profiles"</code>, first we are going to focus on the "profiles", and then in the "iisSettings".

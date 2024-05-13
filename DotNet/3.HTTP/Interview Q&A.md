@@ -1,4 +1,3 @@
-
 ## What is HTTP?
 HTTP (a.k.a. Hypertext Transfer Protocol) is an application protocol that is the foundation of most data exchange on the web, and it is the base to understand Client-Server applications.
 
@@ -34,7 +33,7 @@ Host: www.example.com
 Accept: application/json
 Content-Type: application/json
 {
-Some_Key_Value: "some data"
+	Some_Key_Value: "some data"
 }
 ```
 

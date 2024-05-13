@@ -54,7 +54,7 @@ dotnet run
 Note: The terminal must be in the directory where your project is, otherwise you will have to indicate with the <code>--Project</code> flag where is the project that you want to run by passing the path of where it is located.
 </p>
 
-If you want to see the example project you can visit this repo: [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/1.MyFirstApp/MyFirstApp)
+If you want to see the example project you can visit this repo: [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/MyFirstApp)
 
 ## Next Steps
 - [[LaunchSettings]]

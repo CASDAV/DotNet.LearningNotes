@@ -134,13 +134,9 @@ Here is an example of how looks an HTTP request message
 
 ```text
 POST /user?id=1 HTTP/1.1
-
 Host: www.example.com
-
 Accept: application/json
-
 Content-Type: application/json
-
 {
     Some_Key_Value: "some data"
 }
@@ -243,13 +239,9 @@ This one doesn't change, it's just the same as it was in the request format.
 Here is an example of how looks an HTTP response message
 
 ```text
-
 HTTP/1.1 200 Ok
-
 Server: Kestrel
-
 Content-Type: application/json
-
 {
     Some_Key_Value: "some data"
 }

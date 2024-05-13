@@ -54,3 +54,6 @@ In the "Download the desktop application for" field, select the Windows option, 
 
 <p style="color:yellow">Note: The downloaded installation file is compatible with Windows 64-bit architecture on the processor, so it is necessary to verify before that your device is compatible with the downloaded postman installer</p>
 ### Third Step
+Finally, you must run the .exe installation file, where an indication that Postman is being installed on your Windows device will appear, leaving the application ready for normal execution locally.
+
+![Postman web](../assets/Environment_Setup/Postman_finish.png)

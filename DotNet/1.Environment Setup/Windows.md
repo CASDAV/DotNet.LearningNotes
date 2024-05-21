@@ -8,7 +8,7 @@ At the bottom, select the community version of Visual Studio for Windows on the 
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc.png)
 <p style="color:yellow">Note: It is possible that Microsoft will update the design of the download website, the important thing is to find and download the Visual Studio Community for Windows </p>
-
+## Second Step
 After selecting the version of visual studio community, the VisualStudioSetup.exe installer will be automatically downloaded to your device:
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc_download.png)
@@ -26,6 +26,7 @@ When the installer is ready, a list will open with the different resources that 
 <p style="color:yellow">Note: Note: To check the installation location of the IDE, at the bottom left of the installer, we can find the location where Visual Studio will be installed, if you want to change the installation path, it is possible to perform this action by clicking on the "Change" button " next to the current installation path</p>
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc_install_3.png)
+## Third step
 Next, start the installation process of the resources selected in the previous installation step, the download and installation operation may take a few minutes
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc_install_4.png)

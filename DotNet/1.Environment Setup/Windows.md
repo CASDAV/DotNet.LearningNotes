@@ -8,11 +8,14 @@ At the bottom, select the community version of Visual Studio for Windows on the 
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc.png)
 <p style="color:yellow">Note: It is possible that Microsoft will update the design of the download website, the important thing is to find and download the Visual Studio Community for Windows </p>
+
+
 ## Second Step
 After selecting the version of visual studio community, the VisualStudioSetup.exe installer will be automatically downloaded to your device:
 
 ![VS code .Net extensions](../assets/Environment_Setup/vsc_download.png)
-<p style="color:yellow">Note: The downloaded file may vary in name due to possible Microsoft modifications, please verify that the download is made from the official Microsoft site</p> <a href="https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Professional&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false">Here you can download the official version of Visual Studio Community</a>
+
+<p style="color:yellow">Note: The downloaded file may vary in name due to possible Microsoft modifications, please verify that the download is made from the official Microsoft site <a href="https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Professional&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false">Here you can download the official version of Visual Studio Community</a></p> 
 
 With the installer downloaded we proceed to execute to begin the installation with the IDE, when clicking on the installer, the execution of the program will begin, so the following text box will appear in which we must click on the "Continue" button
 

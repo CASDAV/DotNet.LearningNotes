@@ -2,4 +2,4 @@
 
 ## Custom Middleware Extensions
 
-## Custom COnventional Middleware Class
+## Custom Conventional Middleware Class

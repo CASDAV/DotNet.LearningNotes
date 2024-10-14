@@ -10,7 +10,9 @@ Normally, to access the browser development tools, all you have to do is right-c
 
 ![VS code .Net extensions](../assets/HTTP/development_tools_firts_menu.png)
 
-<p style="color:yellow">Note: The instructions and images presented correspond to the process of viewing the developer options in Google Chrome, however, the steps in other commercial browsers are very similar to those presented previously in this section </p>
+
+>[!note]
+>The instructions and images presented correspond to the process of viewing the developer options in Google Chrome, however, the steps in other commercial browsers are very similar to those presented previously in this section.
 
 Importantly, these development tools not only allow you to view HTTP requests, but also analyze their contents, inspect request and response headers, and much more. This gives you deep insight into the inner workings of a website and helps you resolve issues related to network traffic.
 
@@ -36,7 +38,10 @@ app.Run();
 Now, when executing the code and taking into account that the project URL is the address determined in the project settings (in this case, it is `localhost:7295`), we can access the content from our browser.
 
 To do this, simply open your preferred browser and enter the URL `https://localhost:7295`. This will send a GET request to the server, which will respond with the content specified in our code, in this case, the message "Hello World."
-<p style="color:yellow">Note: To find out the URL of your project, you must go to its root and access the Properties folder. Inside this folder, you will find a file called launchSettings.json, which contains the configuration parameters for your project. It is in this file where you should look for the "applicationUrl" field to find out the address (or addresses) of your project. </p>
+
+>[!note]
+>To find out the URL of your project, you must go to its root and access the Properties folder. Inside this folder, you will find a file called launchSettings.json, which contains the configuration parameters for your project. It is in this file where you should look for the "applicationUrl" field to find out the address (or addresses) of your project. 
+
 When executed in the browser, we can see that the "Hello World" present in the code is presented, so now, if we access the developer tools, in the "Network" tab and reload the page, we can see the request What we have just done to the server, with additional properties, if we click on the request, we can see in detail more information about the GET request made
 
 ![VS code .Net extensions](../assets/HTTP/Get_method_show.png)

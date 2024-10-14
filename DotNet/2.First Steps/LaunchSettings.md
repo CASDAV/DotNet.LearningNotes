@@ -59,8 +59,8 @@ Now let's understand each attribute, and what is in charge of:
 - **dotnetRunMessages** this attribute allows or deny the application to display messages in the terminal of the running server.
 - **launchBrowser** this attribute determines if once the application is running, a browser window will be initialized to see/consume the application by opening the root URL or not.
 - **applicationUrl** this attribute specifies the application base URL or URLs which you can access the application.
-
-<p style="color:yellow">Note: a good practice is to set the port of the application between 1024 - 65536, because the other ports are reserved for the operating system. (Especially on Windows)</p>
+  >[!note]
+  >A good practice is to set the port of the application between 1024 - 65536, because the other ports are reserved for the operating system. (Especially on Windows).
 
 - **enviromentVariables** this attribute allows us to set configuration values, by default, it comes with a configuration key called **"ASPNETCORE_ENVIRONMENT"** and the value of **"Development"**, you can change the value depending on your purpose, e.g. Production or Staging.
 

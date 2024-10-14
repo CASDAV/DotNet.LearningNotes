@@ -8,9 +8,8 @@ With that in mind here we will explain the right order recommended by Microsoft.
 
 As you can see in the previous image, this is the recommended order when using the built-in middleware (even Microsoft recommend this order, for more info visit this link: [Microsoft Documentation: Middleware Order ](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0#middleware-order)), another thing that you can see there, is the specific place to put the custom middleware in the recommended order,.
 
-<p style="color:yellow">
-Note: This order isn't mandatory, so it means that you can remove (sometimes you can remove middleware without problems, read the documentation for more info) or change the order if you want (we do not recommend changing the order of the built-in middleware), but that could lead to some problems, also there are another built-in middlewares that you can use that aren't shown in the image, for more info of this middlewares, and its order visit the next link: <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0#built-in-middleware">Microsoft Documentation: Built-in Middleware</a>. 
-</p>
+> [!note]
+> This order isn't mandatory, so it means that you can remove (sometimes you can remove middleware without problems, read the documentation for more info) or change the order if you want (we do not recommend changing the order of the built-in middleware), but that could lead to some problems, also there are another built-in middlewares that you can use that aren't shown in the image, for more info of this middlewares, and its order visit the next link: <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-8.0#built-in-middleware">Microsoft Documentation: Built-in Middleware</a>. 
 
 Now we will make a short explanation of each of the middleware shown in the image, so you can understand what is going on in the middleware pipeline.
 
@@ -22,18 +21,17 @@ The function of the exception handler are:
 - Catch and log unhandled exceptions.
 - Re-execute the request in alternate pipeline using an indicated path, if the response is already started the request isn't re-executed.
 
-<p style="color:yellow">
-Note: If the alternate pipeline throws an exception of its own, the middleware will throw the original exception.
-</p>
+>[!note]
+>If the alternate pipeline throws an exception of its own, the middleware will throw the original exception.
 
 To use this middleware in your app you need to add the next line to the pipeline:
 ```cs
 app.UseExceptionHandler();
 ```
 
-<p style="color:yellow">
-Note: This middleware isn't recommended for development environments, use instead the middleware <code>app.UseDeveloperExceptionPage</code>, an example of how you can implement this 
-</p>
+
+>[!note]
+>This middleware isn't recommended for development environments, use instead the middleware ``app.UseDeveloperExceptionPage``, an example of how you can implement this 
 
 For more info of this middleware and error handling visit: [Microsoft Documentation: Error Handling in ASP.Net core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/error-handling?view=aspnetcore-8.0).
 
@@ -53,30 +51,32 @@ To use this middleware in your app you need to add the next line to the pipeline
 app.UseHSTS();
 ```
 
-<p style="color:yellow">
-Note: This middleware isn't recommended for development environments, that's because HSTS settings are easily cached by browsers (this is specially inconvenient while doing test). By default HSTS excludes the loopback address (local host).
-<br/>
-<br/>
-Here an example of how to use HSTS in development environments:
-</p>
+> [!note]
+>This middleware isn't recommended for development environments, that's because HSTS settings are easily cached by browsers (this is specially inconvenient while doing test). By default HSTS excludes the loopback address (local host).
 
-```cs
-var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddRazorPages();
+> [!example]
+> Here you can see how to use HSTS in development environments:
+> ```cs
+>var builder = WebApplication.CreateBuilder(args);
+>
+>builder.Services.AddRazorPages();
+>
+>var app = builder.Build();
+>
+>f (!app.Environment.IsDevelopment())
+>{
+>    app.UseExceptionHandler("/Error");
+>    app.UseHsts();
+>}
+>
+>//More middleware...
+>
+>app.Run();
+>```
 
-var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
 
-//More middleware...
-
-app.Run();
-```
 
 ### Https Redirection
 
@@ -87,9 +87,9 @@ To use this middleware in your app you need to add the next line to the pipeline
 app.UseHttpsRedirection();
 ```
 
-<p style="color:yellow">
-Note: If you are deploying your app with a reverse proxy server that can handle by its own the HTTPS redirection, and also writing HSTS headers, the HTTPS redirection and the HSTS middleware isn't required in your app pipeline.
-</p>
+>[!note]
+>If you are deploying your app with a reverse proxy server that can handle by its own the HTTPS redirection, and also writing HSTS headers, the HTTPS redirection and the HSTS middleware isn't required in your app pipeline.
+
 
 ### Static Files
 
@@ -97,9 +97,8 @@ This middleware allows your web application to serve static files like HTML, CSS
 
 When you create an app you will see a web root directory called **wwwroot**, by default the static files middleware will take this directory as the static files storage for the application.
 
-<p style="color:yellow">
-Note: Its posible to change the default directory for more info visit: <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-8.0&tabs=windows#content-root">Microsoft Documentation: Content root/Web root</a >.
-</p>
+>[!note]
+>Its posible to change the default directory for more info visit: <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/?view=aspnetcore-8.0&tabs=windows#content-root">Microsoft Documentation: Content root/Web root</a >
 
 To use this middleware in your app you need to add the next line to the pipeline:
 ```cs
@@ -145,11 +144,12 @@ app.Run();
 
   There is a lot more info about this middleware an its features, to see more visit: [Microsoft Documentation: Static Files Middleware](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-8.0).
 
-<p style="color:yellow">
-Note: For security is recommended to don't serve sensitive files or files that are not going to be shown to the final users. 
-</p>
+>[!note]
+>For security is recommended to don't serve sensitive files or files that are not going to be shown to the final users.
 
 ### Routing
+
+
 
 ### CORS
 

@@ -2,7 +2,9 @@
 
 Postman is an API(application programming interface) development tool which helps to build, test and modify APIs. Almost any functionality that could be needed by any developer is encapsulated in this tool. It is used by over 5 million developers every month to make their API development easy and simple. It has the ability to make various types of HTTP requests(GET, POST, PUT, PATCH), saving environments for later use, converting the API to code for various languages(like JavaScript, Python).
 
-<p style="color:yellow">Note: For more information about Postman visit the following links <a href="https://www.postman.com/product/what-is-postman/">Postman</a> <a href="https://www.geeksforgeeks.org/introduction-postman-api-development/">Geeks for Geeks: Introduction to Postman for API Development</a> </p>
+>[!note]
+>For more information about Postman visit the following links <a href="https://www.postman.com/product/what-is-postman/">Postman oficial site</a> and <a href="https://www.geeksforgeeks.org/introduction-postman-api-development/">Geeks for Geeks: Introduction to Postman for API Development</a>.
+
 
 ## Linux
 
@@ -28,7 +30,8 @@ Once you have finished the installation process, execute the application.
 
 ![Postman execution](../assets/Environment_Setup/Postman_execution.png)
 
-<p style="color:yellow">Note: The graphical interface may vary depending on the graphical environment of your distribution</p>
+>[!note]
+>The graphical interface may vary depending on the graphical environment of your distribution
 
 ### Fourth step
 
@@ -52,9 +55,8 @@ In the "Download the desktop application for" field, select the Windows option, 
 
 ![Postman web](../assets/Environment_Setup/Postman_web_download.png)
 
-<p style="color:yellow">
-	Note: The downloaded installation file is compatible with Windows 64-bit architecture on the processor, so it is necessary to verify before that your device is compatible with the downloaded postman installer
-</p>
+>[!note]
+>The downloaded installation file is compatible with Windows 64-bit architecture on the processor, so it is necessary to verify before that your device is compatible with the downloaded postman installer.
 
 ### Third Step
 Finally, you must run the .exe installation file, where an indication that Postman is being installed on your Windows device will appear, leaving the application ready for normal execution locally.

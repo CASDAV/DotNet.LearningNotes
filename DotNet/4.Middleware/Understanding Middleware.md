@@ -10,9 +10,8 @@ Those components are assembled into the application pipeline. One of the most im
 
 ![Middleware chain](../assets/Middleware/MiddlewareChain.png)
 
-<p style="color:yellow">
-Note: Each middleware should perform just a single operation (Should follow S.R.P.)
-</p>
+>[!note]
+>Each middleware should perform just a single operation (Should follow S.R.P.)
 
 ### Goals of Middleware
 
@@ -32,9 +31,8 @@ When a middleware doesn't pass the request to the next middleware is called term
  
 As we said before the middleware is assembled into the application pipeline, this pipeline is located in the file called **"Program.cs"** by default,  just after calling the build method. Once the bullid method is executed you will get a application builder object usually called **"App"**, this **"App"** object is used to enable or create middleware.
 
-<p style="color:yellow">
-Note: Don't forget that you have to create the middleware in the same order it is going to be executed.
-</p>
+>[!note]
+>Don't forget that you have to create the middleware in the same order it is going to be executed.
 
 As we said before there are two ways to create middleware, one of them is using the request delegate. To use the request delegate for create middleware there are some methods, one of them is the **"Run"** method, in this **"Run"** method you will define a lambda expression that you want to execute upon receiving the request.
 
@@ -58,23 +56,21 @@ app.Run((HttpContext context) => { //Run method with lambda expression
 app.Run();
 ```
 
-<p style="color:yellow">
-Note: If the code in your lambda expression invoques or uses some asynchronous methods, your expression must be declared as async.
-<br/>
-<br/>
-Example:
-</p>
+>[!note]
+>If the code in your lambda expression invoques or uses some asynchronous methods, your expression must be declared as async.
+>>[!example]
+>>```cs
+>>var builder = WebApplication.CreateBuilder(args);
+>>var app = builder.Build();
+>>
+>>app.Run(async (HttpContext context) =>{
+>>	//Some cool asynchronous code
+>>});
+>>
+>>app.Run();
+>>```
 
-```cs
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
-app.Run(async (HttpContext context) =>{
-	//Some cool asynchronous code
-});
-
-app.Run();
-```
 
 ### Multiple Run() Methods?
 
@@ -104,12 +100,27 @@ app.Run(async (HttpContext context) => {
 app.Run();
 ```
 
-<p style="color:yellow">
-Note: In every middleware you can perform actions before and after calling the next delegate (when its posible). 
-<br/>
-<br/>
-Example:
-</p>
+>[!note]
+>In every middleware you can perform actions before and after calling the next delegate (when its posible). 
+>>[!example]
+>>```cs
+>>var builder = WebApplication.CreateBuilder(args);
+>>var app = builder.Build();
+>>
+>>app.Use(async (context, next) =>
+>>{
+>>    // Work before calling the next request delegate.
+>>    await next.Invoke();
+>>   // Work after calling the next request delegate.
+>>});
+>>
+>>app.Run(async context =>
+>>{
+>>   await context.Response.WriteAsync("Hello from 2nd delegate.");
+>>});
+>>
+>>app.Run();
+>>```
 
 ```cs
 var builder = WebApplication.CreateBuilder(args);

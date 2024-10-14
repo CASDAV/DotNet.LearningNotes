@@ -24,7 +24,9 @@ Once the command is executed you will see a list with all the project templates 
 
 ![Project templates](../assets/First_Steps/DotNetTemplatesCommand.png)
 
-<p style="color:yellow">Note: When you are creating a project from CLI try always to remember the short name of the template that you want to create to use it in the next command.</p>
+>[!note]
+>When you are creating a project from CLI try always to remember the short name of the template that you want to create to use it in the next command.
+
 
 ## Execute the next command
 
@@ -50,9 +52,9 @@ You can also run your app runing the next command in the terminal
 dotnet run
 ```
 
-<p style="color:yellow">
-Note: The terminal must be in the directory where your project is, otherwise you will have to indicate with the <code>--Project</code> flag where is the project that you want to run by passing the path of where it is located.
-</p>
+>[!note]
+>The terminal must be in the directory where your project is, otherwise you will have to indicate with the ``--Project`` flag where is the project that you want to run by passing the path of where it is located.
+
 
 If you want to see the example project you can visit this repo: [My First App](https://github.com/CASDAV/DotNet.Code/tree/main/MyFirstApp)
 

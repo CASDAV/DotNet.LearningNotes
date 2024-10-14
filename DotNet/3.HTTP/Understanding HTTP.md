@@ -50,17 +50,14 @@ Some HTTP methods are:
 
 - DELETE: Deletes the specified resource.
 
-  
-<p style="color:yellow">
-Note: As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.
-</p>
 
-<p style="color:yellow">
-Note 2: For more information about HTTP methods, visit 
-	<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">
-	Mozilla Developer: HTTP request methods.
-	</a>
-</p>
+>[!note]
+>As you can see, each method has its own purpose, however, those purposes are not mandatory is just a standard that all developers should follow as far as possible.
+
+>[!info]
+>For more information about HTTP methods, visit : <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">Mozilla Developer: HTTP request methods.</a>
+
+
 
 #### URL
 
@@ -80,7 +77,8 @@ This section determines the version of the HTTP protocol (a.k.a. HTTP specificat
 
 - HTTP/3 HTTP over QUIC
 
-<p style="color:yellow">Note: For more information about HTTP protocol versions, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"> Mozilla Developer: Evolution of HTTP</a>.</p>
+>[!info]
+>For more information about HTTP protocol versions, visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP"> Mozilla Developer: Evolution of HTTP</a>.
 
 #### REQUEST HEADERS
 
@@ -102,7 +100,8 @@ This section contains Key-Value pairs that are sent by the browser to the server
 
 - Cookie: Contains cookies to send to server. i.e. x: 100
 
-<p style="color:yellow">Note: Usually these aren't visible to the end-user, this info is intended to the exchange of info between the server and the client</p>
+>[!note]
+>Usually these aren't visible to the end-user, this info is intended to the exchange of info between the server and the client.
 
 #### EMPTY LINE
 
@@ -197,12 +196,10 @@ Additionally, each response code comes with a description of the code, next we w
 - 404 Not Found: The server cannot find the requested resource. In the browser, this means the URL is not recognized. In an API, this can also mean that the endpoint is valid but the resource itself does not exist. Servers may also send this response instead of 403 Forbidden to hide the existence of a resource from an unauthorized client. This response code is probably the most well known due to its frequent occurrence on the web.
 - 500 Internal Server Error: The server has encountered a situation it does not know how to handle.
 
-<p style="color:yellow">
-Note: For more information about status codes click the next link: 
-	<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">
-	Mozilla Developer: HTTP response status codes.
-	</a>
-</p>
+>[!info]
+>For more information about status codes click the next link:  <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">
+Mozilla Developer: HTTP response status codes.	</a>
+
 
 #### RESPONSE HEADERS
 
